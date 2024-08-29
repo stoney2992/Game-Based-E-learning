@@ -1,0 +1,2886 @@
+/* Login Pages*/
+@font-face {
+    font-family: 'Fredoka';
+    src: url('/blog9/resources/fonts/Fredoka-VariableFont_wdth\,wght.ttf');
+}
+.container-heads form .heads .lgn{
+    color: #85342A;
+    font-size: 70px;
+    font-family: Fredoka;
+    font-weight: 500;
+    position: relative;
+}
+.container-heads form .heads .lgn{
+    position: absolute;
+    top: 20%;
+    right: 25%;
+
+}
+
+/* Teachers Registration index */
+.successful{
+    margin-left: 30%;
+    font-size: 15px;
+    color: red !important;
+}
+
+
+.container-heads form .container-login #btn1{
+    color: #fff;
+    background-color: #85342A;
+    padding: 12px;
+    border-radius: 30px;
+    width: 250px;
+    border-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    font-family: Fredoka;
+    cursor: pointer;
+}
+
+.container-heads form .container-login #btn1{
+    position: absolute;
+    top: 55%;
+    right: 28%;
+
+}
+body{
+    font-family: 'Fredoka';
+}
+
+
+.container-heads form .container-login #username{
+    background-color: #F3EFEF;
+    padding: 12px;
+    font-size: 28px;
+    border-radius: 20px;
+    border-style: none;
+    width: 500px;
+    position: relative;
+
+}
+
+.container-heads form .container-login #username{
+    position: absolute;
+    top: 35%;
+    right: 20%;
+}
+
+.container-heads form .container-login #password{
+    background-color: #F3EFEF;
+    padding: 12px;
+    font-size: 28px;
+    border-radius: 20px;
+    border-style: none;
+    width: 500px;
+    position: relative;
+
+}
+.container-heads form .container-login #password{
+    position: absolute;
+    top: 43%;
+    right: 20%;
+}
+
+.container-heads form  img{
+    margin-top: 2%;
+    margin-left: 10%;
+    height: 700px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+
+/* end sidebar dashboard */
+
+/* start sidebar in addleson page */
+
+.container-dashboard .sidebar-add-lesson{
+    position: fixed;
+    width:15%;
+    height: 100%;
+    background: #F4F4F4;
+    margin-top: -80px;
+
+}
+.add-lesson-list li a{
+    list-style: none;
+    color: #5A787D;
+}
+
+.container-dashboard .sidebar-add-lesson ul li a:hover{
+  color: #61c07c;
+    
+}
+.container-dashboard span{
+    display: none;
+
+}
+.container-dashboard .sidenav{
+    display: none;
+   
+
+}
+.container-dashboard.sidebar-add-lesson img{
+    position: relative;
+    
+}
+.container-dashboard .sidebar-add-lesson img{
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    
+}
+.container-dashboard .sidebar-add-lesson ul h1{
+    color: #85342A;
+    text-align: left;
+    font-weight: bold !important;
+    font-size: 25px;
+    display: inline-block;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: Fredoka;
+    
+
+}
+.container-dashboard .sidebar-add-lesson h1{
+    position: absolute;
+    top: 0px;
+}
+.container-dashboard .sidebar-add-lesson ul{
+    padding-top: 50px;
+    color: #5A787D;
+}
+.container-dashboard .sidebar-add-lesson ul li{
+    padding: 0 15px 15px 15px;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 25px;
+    padding-left: 60px;
+   
+}.container-dashboard .sidebar-add-lesson ul li i{
+  position: relative;
+   
+}
+.container-dashboard .sidebar-add-lesson ul li i{
+    position: absolute;
+    left: 20px;
+     
+  }
+
+.container-dashboard .sidebar-add-lesson ul li a{
+    color: #5A787D;
+    font-family: 'Fredoka';
+}
+/* pupils modals listt */
+#openPupilsModal{
+    font-size: 24px;
+    color: #5A787D;
+    border: none;
+    background-color: transparent;
+    font-family: 'Fredoka';
+    cursor: pointer;
+}
+#openPupilsModal:hover{
+    color: #61c07c;
+}
+
+.add-button-lesson{
+    color: #000;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    background-color: #e4e9ee;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    width: 150px;
+    cursor: pointer;
+    border-style: none;
+    float: right;
+    margin-top: -50px;
+    
+}
+.add-button-lesson:hover{
+    scale: 1.1;
+    background-color: #61c07c;
+}
+.pupils-modal-content{
+    margin-top: 10%;
+    width: 40%;
+    height: 30%;
+    border-radius: 10px;
+    border-style: double;
+    border-color: green;
+    background-color: #fff;
+    text-align: center;
+    color: #5A787D;
+    margin: auto;
+    height: 100%;
+
+}
+
+.modal-pupils-title{
+    text-align: center;
+    margin-top: -30px;
+}
+.pupils-class-list p{
+    font-family: 'Fredoka';
+    font-size: 32px;
+    font-weight: 350;
+    margin: 20px 0 20px 20px;
+   
+}
+
+.adjust-list{
+    margin-top: 50px;
+}
+
+.pupils-class-list{ 
+    width: 75%;
+    text-align: left;
+    margin-left: 100px;
+}
+/* end sidebar in addleson page */
+
+/* side bar my class */
+.container-dashboard .sidebar-myclass{
+    position: fixed;
+    width:15%;
+    height: 100%;
+    background: #F4F4F4;
+    margin-top: -80px;
+
+}
+
+.container-dashboard .sidebar-myclass ul li a:hover{
+  color: #61c07c;
+    
+}
+.container-dashboard span{
+    display: none;
+
+}
+.container-dashboard .sidenav{
+    display: none;
+   
+
+}
+.container-dashboard.sidebar-myclass img{
+    position: relative;
+    
+}
+.container-dashboard .sidebar-myclass img{
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    
+}
+.container-dashboard .sidebar-myclass ul h1{
+    color: #85342A;
+    text-align: left;
+    font-weight: bold !important;
+    font-size: 25px;
+    display: inline-block;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: Fredoka;
+    
+
+}
+.container-dashboard .sidebar-myclass h1{
+    position: absolute;
+    top: 0px;
+}
+.container-dashboard .sidebar-myclass ul{
+    padding-top: 50px;
+    color: #5A787D;
+}
+.container-dashboard .sidebar-myclass ul li{
+    padding: 0 15px 15px 15px;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 25px;
+    padding-left: 60px;
+   
+}.container-dashboard .sidebar-myclass ul li i{
+  position: relative;
+   
+}
+.container-dashboard .sidebar-myclass ul li i{
+    position: absolute;
+    left: 20px;
+     
+  }
+
+.container-dashboard .sidebar-myclass ul li a{
+    color: #5A787D;
+    font-family: Fredoka;
+}
+
+.view-lesson{
+    font-size: 56px;
+    text-align: center;
+    margin-left: 31%;
+    color: #000;
+}
+/* end of sidemar myclass */
+.container-dashboard .sidebar{
+    position: fixed;
+    width:15%;
+    height: 100%;
+    background: #F4F4F4;
+    margin-top: -100px;
+
+}
+.container-dashboard .sidebar ul li a:hover{
+  color: #61c07c;
+    
+}
+.container-dashboard span{
+    display: none;
+
+}
+.container-dashboard .sidenav{
+    display: none;
+   
+
+}
+.container-dashboard .sidebar img{
+    position: relative;
+    
+}
+.container-dashboard .sidebar img{
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    
+}
+.container-dashboard .sidebar ul h1{
+    color: #85342A;
+    text-align: left;
+    font-weight: bold !important;
+    font-size: 25px;
+    display: inline-block;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: Fredoka;
+    
+
+}
+.container-dashboard .sidebar h1{
+    position: absolute;
+    top: 0px;
+}
+.container-dashboard .sidebar ul{
+    padding-top: 50px;
+    color: #5A787D;
+}
+.container-dashboard .sidebar ul li{
+    padding: 0 15px 15px 15px;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 25px;
+    padding-left: 60px;
+   
+}.container-dashboard .sidebar ul li i{
+  position: relative;
+   
+}
+.container-dashboard .sidebar ul li i{
+    position: absolute;
+    left: 20px;
+     
+  }
+
+.container-dashboard .sidebar ul li a{
+    color: #5A787D;
+    font-family: Fredoka;
+}
+
+
+.classlesson ul{
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    color:#5A787D;
+}
+.container-dashboard .sidebar .db-image img{
+    position: relative;
+}
+.container-dashboard .sidebar .db-image img{
+    position: absolute;
+    top: 17.4%;
+    left: 13%;
+}
+.container-dashboard .sidebar .game-image img{
+    position: relative;
+}
+.container-dashboard .sidebar .game-image img{
+    position: absolute;
+    top: 24%;
+    left: 13%;
+
+}
+
+.container-dashboard .sidebar .activity-image img{
+    position: relative;
+}
+.container-dashboard .sidebar .activity-image img{
+    position: absolute;
+    top: 30.8%;
+    left: 13%;
+
+}
+
+.container-dashboard .sidebar .rewards-image img{
+    position: relative;
+}
+.container-dashboard .sidebar .rewards-image img{
+    position: absolute;
+    top: 37.9%;
+    left: 13%;
+
+}
+
+
+.container-dashboard .search-bar form input{
+    width: 30%;
+    height: 50%;
+    background-color: #F3EFEF;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 1%;
+    border-style: none;
+
+}
+
+.container-dashboard .search-bar form button{
+    background-color: #F3EFEF;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    align-items: center;
+    margin-left: -3%;
+    margin-top: 1%;
+    border-style: none; 
+    color: #959595;
+
+}
+
+.container-dashboard .message .msg-btn{
+    margin-left: 65%;
+    margin-top: -2.5%;
+    color: #b6b3b3;
+  
+}
+
+.container-dashboard .message .nt-btn{
+    margin-left: 70%;
+    margin-top: -1.9%;
+    color: #b6b3b3;
+  
+}
+
+.container-dashboard .message img{
+    margin-left: 70%;
+    position: relative;
+
+}
+
+.container-dashboard .message img{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    
+}
+.container-dashboard .message h1{
+    margin-left: 78%;
+    margin-top: -2.2%;
+    font-size: 24px;
+    color: #5A787D;
+    font-family: Fredoka;
+}
+
+.hdr{
+    margin-top: 5%;
+    width: 70%;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 20%;
+    font-family: 'Fredoka';
+    background-color: #fff;
+    height: 200px;
+    border-style: solid;
+    border-color: #5A787D;
+    box-shadow: 10px 10px lightblue;
+}
+.hdr-teacher{
+    margin-top: 5%;
+    width: 70%;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: 20%;
+    font-family: 'Fredoka';
+    background-color: #fff;
+    height: 200px;
+    border-style: solid;
+    border-color: #5A787D;
+    box-shadow: 10px 10px lightblue;
+}
+.hello{ 
+    font-size: 48px;
+    font-weight: 400;
+    color: #161718;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+.start{ 
+    font-size: 24px;
+    font-weight: 400;
+    color: #5A787D;
+    padding-top: 30px;
+    padding-left: 50px;
+
+}
+.classroom-img{
+    width: 200px;
+    height: 200px;
+    margin-top: -350px;
+    margin-left: 83%;
+    padding-top: 40px;
+    
+}
+
+
+
+
+
+.container-dashboard .ratbackg img{
+    position: relative;
+}
+
+.container-dashboard .ratbackg img{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    width: 40%;
+}
+
+.container-dashboard .add-btn button{
+    color: #959595;
+    border-style: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #F3EFEF;
+    border-radius: 50px;
+    margin-left: 20%;
+    margin-top: 1%;
+    border-style: none;
+    color: #959595;
+    padding: 10px;
+    width: 200px;
+    border-style: none;
+    text-align: center; 
+    border-color: green;
+    border-style: double;
+}
+
+
+.container-dashboard .add-btn button:hover{ 
+    transform: scale(1.1);
+    background-color: #61c07c;
+    color: #000;
+}
+
+/* header top messages */
+.nav-bar ul .lgt-btn{
+    margin-left: 89%;
+    font-size: 18px;
+}
+
+.super-admin{
+    position: absolute;
+    top: 18.5px;
+    left: 88.5%;
+    font-family: 'Fredoka';
+    font-size: 24px;
+    text-decoration: none;
+    color:#E4ECF1;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    
+}
+.teacher-teacher-dashboard{
+    position: absolute;
+    top: 18.5px;
+    left: 88%;
+    font-family: 'Fredoka';
+    font-size: 18px;
+    text-decoration: none;
+    color:#E4ECF1;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+
+}
+
+/* my-classes in add lesson page */
+
+.add-lesson{
+    padding-bottom: 10px;
+}
+/* my-classes in add lesson page */
+
+/* modal in addlesson page */
+
+
+.modal .modal-content-lesson {
+    margin-top: 3%;
+    width: 50%;
+    height: 800px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: green;
+    background-color: #fff;
+    text-align: center;
+    color: #5A787D;
+    
+}
+
+.modal .modal-content-lesson input{
+    width: 100%;
+    padding: 10px;
+    border: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    display: inline-block;
+    height: 50px;
+    font-size: 36px;
+    outline: none;
+    border-radius: 5px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content-lesson {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  /* The Close Button */
+  /* .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  } */
+
+  .modal input{
+    width: 100px;
+  }
+
+  .lesson-title{
+    border-style: solid;
+    width: 100%;
+    margin-top: 50px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    font-size: 36px;
+    font-family: 'Fredoka';
+
+  }
+  .lesson-title input{
+    width: 200px;
+    border-style: solid;;
+    
+  }
+
+  .lesson-content textarea{
+    width: 900px;
+    height: 580px;
+    border: transparent;
+    outline: none;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #5A787D;
+  }
+
+  .create-lesson-btn{
+    list-style: none;
+    color: #000;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    background-color: #e4e9ee;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+    border-style: none;
+  
+
+  }
+  .create-lesson-btn:hover{
+    background-color: #61c07c;
+  }
+
+  .display-add-lesson{
+    font-family: 'Fredoka';
+    color: #5A787D;
+
+  }
+  .add-lesson-title{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: -10px;
+    margin-left: 80px;
+    width: 1150px;
+  }
+  .add-lesson-content{
+    font-size: 30px;
+    font-weight: 400px;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 80px;
+  }
+  .quarter-class{
+    border: solid;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px lightblue;
+  }
+  .add-lesson-date{
+    font-size: 14px;
+    margin-left: 80%;
+    margin-top: -30px;
+  }
+  .display-add-lesson .add-lesson-edt{
+    color: #000;
+    font-size: 24px;
+    color: #5A787D;
+  }
+  .display-add-lesson .add-lesson-edt:hover{
+    color: orange;
+  }
+
+  .add-lesson-delete{
+    color: #000;
+    font-size: 48x;
+    color: #5A787D;
+  }
+  .add-lesson-delete:hover{
+    color: red;
+  }
+  .option-list{
+    display: inline-block;
+    margin-left: 95%;   
+  }
+  /* modal in addlesson page end */
+  
+
+/* my classes in teacher dashboard */
+.my-classes h3{
+
+    margin-top: 80px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #5A787D;
+
+}
+
+
+
+.my-classes{
+    width: 70%;
+    margin-left: 20%;
+    font-family: 'Fredoka';
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+.my-classes .my-display-classes{
+    background-color: #fff;
+    margin: 20px;
+    margin-left: 0;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+    height: 160px;
+    padding-top: 20px;
+    box-shadow: 5px 5px lightblue;
+    border: solid;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.my-classes .my-display-classes:hover{
+    color: #61c07c;
+}
+.my-classes .my-display-classes .class-class{
+    color: #000;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.my-classes .my-display-classes  .class-image{
+    margin-top: -90px;
+    margin-left: 87%;
+    padding-bottom: 0px;
+    padding-top: -10px;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* assign classes */
+.modal .modal-content .modal-display-content .class-dropdown{
+    padding: 5px;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    background-color: #e4e9ee;
+    width: 100%;
+   
+   
+}
+
+.modal .modal-content .modal-display-content .class-dropdown option{
+    text-align: center;
+}
+
+.modal .modal-content form select{
+    font-size: 18px;
+    font-family: 'Fredoka';
+    padding: 3px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+}
+
+
+
+.modal .modal-content{
+    margin-top: 10%;
+    width: 20%;
+    height: 30%;
+    border-radius: 10px;
+    border-style: double;
+    border-color: green;
+    background-color: #fff;
+    text-align: center;
+    color: #5A787D;
+    
+}
+
+.modal .modal-content input{
+    width: 80%;
+    padding: 10px;
+    border: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    display: inline-block;
+    height: 50px;
+    font-size: 24px;
+    outline: none;
+    border-radius: 5px;
+}
+.modal .modal-content .sub-btn{
+    width: 50%;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-top: 20px;
+    background-color: #61c07c;
+    color: #000;
+
+;
+}
+.add-btn .class-display ul{
+    margin-left: 20%;
+    margin-top: 20px;
+    width: 70%;
+    padding: 10px;
+    font-size: 36px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #61c07c;
+    cursor: pointer;
+}
+.add-btn .class-display #myTable{
+    text-decoration-style: none;
+}
+
+
+.container-dashboard .section {
+    background-color: #E3E3E3;
+    padding: 30px;
+    padding-bottom: 50px;
+    width: 70%;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left: 20%;
+    padding-top: 50px;
+    color: #5A787D;
+}
+.container-dashboard .section h3{
+    margin-top: -30px;
+}
+
+.container-dashboard .section .pgbar-light{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-dashboard .section .pgbark-dark{
+    background-color: #66858A;
+    margin-top: -20px;
+    padding: 10px;
+    width: 10%;
+    border-radius: 10px;
+}
+
+.container-dashboard .pupils-list h3{
+    margin-top: 5%;
+    margin-left: 20%;
+    align-items: center;
+    color: #66858A;
+    font-size: 48px;
+
+}
+.container-dashboard .pupils-list .pgbark-dark{
+    background-color: #66858A;
+    margin-top: 5px;
+    margin-left: 20%;
+    padding: 5px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+
+/* activities page design  */
+
+.container-dashboard .activities-content button{
+    list-style: none;
+    color: #5A787D;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    background-color: #61c07c;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+    border-style: none;
+    margin-top: 10px;
+    margin-left: 20%;
+
+}
+
+/*end activities page design  */
+
+/*Teachers side class css*/
+.container-dashboard .activities-content .modal .modal-content{
+    width: 50%;
+    height: 100%;  
+    margin-top: 0;
+}
+.container-dashboard .activities-content .modal .modal-content form{
+    margin-left: 0;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    color: #5A787D;
+}
+
+#left-corner{
+    margin-left: -21%;
+}
+.container-dashboard .activities-content .modal .modal-content form .quarter input{
+    padding-bottom: 0;
+    font-size: 24px;;
+}
+.container-dashboard .activities-content .modal .modal-content form .title input{
+    padding-bottom: 0;
+    font-size: 24px;
+    margin-left: 85px;
+}
+.container-dashboard .activities-content .modal .modal-content form .content textarea{
+    position: relative;
+}
+.container-dashboard .activities-content .modal .modal-content form .content textarea{
+    position:absolute ;
+    top: 122%;
+    width: 48vw;
+    left: -5%;
+    height: 40vh;
+    background-color: #e3dedeb8;
+    border-radius: 10px;
+    border: transparent;
+    outline: none;
+    padding: 10px;
+    border-style: none;
+
+}
+.container-dashboard .activities-content .modal .modal-content form .content .label-content{
+    position: relative;
+}
+.container-dashboard .activities-content .modal .modal-content form .content .label-content{
+    position: absolute;
+    top: 18%;
+    left: 26%;
+}
+.container-dashboard .activities-content .modal .modal-content form input{
+    width: 50%;
+    padding: 10px;
+    margin-left: 50px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline-style: none;
+}
+.container-dashboard .activities-content .modal .modal-content form .submit-btn button{
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+    color: #5A787D;
+    border-style: double;
+    border-color:green;
+}
+.container-dashboard .activities-content .modal .modal-content form .submit-btn button{
+    position: absolute;
+    top: 8%;
+    left: 45%;
+}
+.container-dashboard .activities-content .modal .modal-content form .submit-btn button:hover{
+    background-color: #61c07c;
+}
+
+
+/*reward page design  */
+
+.container-dashboard .add-reward-btn{
+    background-color: #F3EFEF;
+    border-radius: 50px;
+    margin-left: 20%;
+    margin-top: 5%;
+    border-style: none;
+    color: #959595;
+    padding: 50px;
+    width: 200px;
+    border-style: none;
+    text-align: center;
+}
+
+.container-dashboard .add-reward-btn button{ 
+    text-decoration: none;
+    border-style: none;
+    color: #5A787D;
+    
+}
+/*end reward page design  */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal input{
+    width: 100px;
+  }
+
+  
+  
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+.container-dashboard .points{
+    padding: 20px;
+    background-color: #F3F3F3;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.container-dashboard .points .textTP{
+    font-family: 'Fredoka';
+    font-size: 24px;
+    color: #5A787D;
+}
+.container-dashboard .points .numberPoints{
+    position: relative;
+    
+}
+.container-dashboard .points .numberPoints{
+    position: absolute;
+    left: 85%;
+    top: 55%;
+    font-family: 'Fredoka';
+    font-size: 24px;
+    color: #E5A024;
+    font-weight: bold;
+    
+}
+
+.container-dashboard .badges{
+    background-color: #F3F3F3;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 20px;
+    padding-bottom: 200px;
+    border-radius: 20px;
+}
+.container-dashboard .badges p{ 
+    font-family: 'Fredoka';
+    font-size: 36px;
+    color: #5A787D ;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+
+/* teacher */
+
+/* ADMIN Style */
+
+
+.nav-bar a {
+    position: relative;
+}
+.nav-bar{
+    background-color:#3284DB;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.nav-bar img{
+    display: flex;
+    position: relative;
+}
+.nav-bar img{
+    position: absolute;
+    top: 20px;
+    left: 2%;
+}
+.nav-bar a {
+    position: absolute;
+    top: 20px;
+    left: 4%;
+    font-family: 'Fredoka';
+    font-size: 24px;
+    text-decoration: none;
+    color:#E4ECF1;
+}
+.nav-bar ul{
+    margin-left: 60%;
+}
+
+    
+.nav-bar ul li{
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Fredoka';
+    font-size: 24px;
+    color: #E4ECF1;
+
+
+}
+
+
+.admin-container .admin{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 30px;
+    background-color:#E3E3E3;
+    padding: 40px 140px;
+    font-family: 'Fredoka';
+    font-size: 24px;
+    text-align: center;
+    color: #5A787D;
+    margin-top: 10%;
+    
+    
+}
+
+.admin-container  #pupils{
+    background-color: #28BBF5;
+    color: #000000;
+}
+.admin-container  #teachers{
+    background-color: #F56564;
+    color: #000000;
+}
+.admin-container  #request{
+    background-color: #90D142;
+    color: #000000;
+}
+.admin-container{
+    margin-left: 20%;
+    position: relative;
+}
+.admin-container {
+    position: absolute;
+    top: 15%;
+}
+.admin-container h3{
+    font-size: 36px;
+    font-family: 'Fredoka';
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #5A787D;
+    position: relative;
+
+}
+
+.admin-container h3{
+    position: absolute;
+    top: 5%;
+}
+
+.admin-container .admin .icons{
+    font-size: 48px;
+    margin-top: -20px;
+}
+.sidenav-bar{
+    margin-top: 68.5px;
+    height: 100vh;
+    width: 15%;
+    background-color: #E4ECF1;
+    position: fixed;
+}
+.sidenav-bar ul{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.sidenav-bar ul li{
+    font-family: 'Fredoka';
+    font-size: 24px;
+    color: #5A787D;
+    padding: 10px;
+}
+.sidenav-bar ul li a{
+    text-decoration: none;
+    color: #5A787D;
+}
+.sidenav-bar ul li a:hover{
+    color: #61c07c;
+}
+
+/* pupils registration page  index*/
+.admin-container .adminAddSection{
+    text-align: center;
+}
+
+.admin-container .adminAddSection .addbtn{
+    list-style: none;
+    color: #5A787D;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    background-color: #61c07c;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 150px;
+    position: relative;
+}
+.admin-container .adminAddSection .addbtn{
+    position: absolute;
+    top: 3.5%;
+    left: 85%;
+}
+.admin-container .adminAddSection .addbtn:hover{
+    transform: scale(1.2);
+}
+.admin-container{
+    width: 70%;
+}
+.backbtn{
+    list-style: none;
+    color:#5A787D;
+    font-size: 18px;
+    font-family: 'Fredoka';
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: lighter;
+    position: relative;
+    border-color: #85342A;
+    
+}
+.backbtn{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+.backbtn:hover {
+    color: #000;
+}
+.admin-container hr{
+    margin-top: 5%;
+
+}
+.admin-container .table{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 24px;
+    color: #5A787D;
+
+}
+.admin-container .table .databody{
+    text-align: center;
+
+}
+
+.admin-container .table .databody tr{
+    background-color: #e4e9ee;
+    color: #000;
+}
+
+.admin-container .table .databody .all-btn .act-btn {
+    display: inline-block;
+}
+
+.admin-container .table .databody .all-btn .act-btn .info-btn{
+    font-family: 'Fredoka';
+    font-size: 20px;
+    border-color: blue;
+    padding: 0px 10px 0 10px;
+   
+    
+}
+.admin-container .table .databody .all-btn .act-btn .edit-btn{
+    font-family: 'Fredoka';
+    font-size: 20px;
+    border-color: yellow;
+    padding: 0px 10px 0 10px;
+ 
+}
+
+.admin-container .table .databody .all-btn .act-btn form {
+    display: flex;
+    margin-top: -20.5%;
+    margin-left: 108%;
+}
+
+
+
+/* pupils registration page  create*/
+.admin-container form{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+   
+}
+
+.admin-container form .form-group input{
+    width: 30%;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Fredoka';
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    outline-style: none;
+    font-size: 18px;
+}
+
+.reg-btn{
+    margin: 40px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    outline-style: none;
+    cursor: pointer;
+    font-family: 'Fredoka';
+    border-style: none;
+    font-size: 18px;
+    background-color: #F39475;
+
+}
+
+.delete-btn{
+    padding: 5px;
+    width: 50%;
+    border-radius: 10px;
+    outline-style: none;
+    cursor: pointer;
+    font-family: 'Fredoka';
+    border-style: none;
+    font-size: 18px;
+    background-color: #F39475;
+}
+.edit-btn{
+    padding: 5px 40px;
+    border-radius: 10px;
+    outline-style: none;
+    cursor: pointer;
+    font-family: 'Fredoka';
+    border-style: none;
+    font-size: 18px;
+    background-color: #61c07c;
+    color: #000;
+
+}
+.ed-btn {
+   width: 15%;
+  
+}
+.all-btn form{
+   margin-top: 0px;
+   padding: 10px;
+}
+
+
+/* delete button in class */
+.del-btn{
+    padding: 5px;
+    width: 80%;
+    border-radius: 10px;
+    outline-style: none;
+    cursor: pointer;
+    font-family: 'Fredoka';
+    border-style: none;
+    font-size: 18px;
+    background-color: #F39475;
+}
+.display-classes ul form {
+    margin-left: 90%;
+    margin-top: -30px;
+}
+
+/* delete button in assign classes */
+
+.display-class  .delete-assign-class{
+    margin-left: -40px;
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    outline-style: none;
+    cursor: pointer;
+    font-family: 'Fredoka';
+    border-style: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+.display-class  .delete-assign-class:hover{
+    color: red;
+}
+/*Admin side Teachers edit*/
+.admin-container form .update-ipt{
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    
+}
+.admin-container form .update-ipt input{
+    width: 50%;
+    padding: 10px;
+    margin: 5px 2px 5px 0;
+    border-color: #61c07c;
+    border-radius: 5px;
+    font-family: "Fredoka";
+
+
+}
+.admin-container form .update-ipt label{
+    margin-left: 0;
+    float: left;
+    margin-top: 15px;
+    font-family: 'Fredoka';
+   
+}
+.admin-container form .update-ipt .password{
+    margin-left: -25px;
+}
+
+.admin-container form .update-btn button{
+    padding: 5px;
+    width: 15%;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Fredoka';
+    cursor: pointer;
+    margin-left: 5%;
+}
+.admin-container form .update-btn button:hover{
+    transform: scale(1.2);
+    background-color:yellow;
+}
+
+/* admin Side studen Information page*/
+
+.admin-container .teachers-info {
+    font-size: 24px;
+    font-family: 'Fredoka';
+    margin-top: 5%;
+    color: #5A787D;
+}
+.admin-container .teachers-info .all-info{
+    margin: 10px;
+}
+.admin-container .teachers-info .all-info input{
+    margin-left: 5%;
+    width: 50%;
+    font-size: 24px;
+    color: #5A787D;
+    border-style: none;
+    
+}
+.admin-container .teachers-info .all-info label{
+    float: left;
+    
+}
+.admin-container .teachers-info .all-info .info-name{
+    margin-left: 10%;
+}
+.admin-container .teachers-info .all-info .info-email{
+    margin-left: 10.2%;
+}
+.admin-container .teachers-info .all-info .info-pass{
+    margin-left: 6.2%;
+}
+.admin-container .teachers-info .all-info .info-cr8{
+    margin-left: 4.63%;
+}
+.admin-container .teachers-info .all-info .info-upt{
+    margin-left: 3.95%;
+}
+
+
+/* teachers side crud */
+.admin-container .table .tablehead .act{
+    position: relative;
+    font-size: 24px;
+}
+.admin-container .table .tablehead .act{
+    position: absolute;
+    display: flex;
+    right: 18%;
+}
+
+
+
+/* Registratuin of Admin Backdoor access*/
+.adminRegister{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Fredoka';
+    font-size: 24px;
+    font-weight: 500;
+}
+.adminRegister form input{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: double;
+    
+}
+.adminRegister form button{
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: green;
+
+}
+.adminRegister form button:hover{
+    background-color: yellow;
+}
+
+
+.p-list{
+    font-size: 24px;
+    font-family: 'Fredoka';
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.class_add {
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 20%;
+    font-size: 24px;
+    font-family: 'Fredoka';
+}
+.class_add h3{
+ 
+    margin-bottom: -30px;
+    font-weight: 400;
+    color: #5A787D;
+    margin-left: 5%;
+    font-size: 36px;
+
+}
+
+.class_add button{
+    list-style: none;
+    color: #000;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    background-color: #e4e9ee;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    width: 150px;
+    cursor: pointer;
+    border-style: none;
+    margin-left: 90%;
+    margin-top: -100px;
+
+}
+.class_add button:hover{
+    background-color: #61c07c;
+}
+.class_add hr{
+    width: 100%;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.display-classes{
+    width: 70%;
+    margin-left: 25%;
+    margin-top: 50px;
+    font-family: 'Fredoka';
+}
+.display-classes ul li{
+    padding: 10px;
+    background-color: #e4e9ee;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.display-classes ul a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+.display-classes ul li:hover{
+    background-color: #61c07c;
+}
+
+.display-class-lesson{
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 10px;
+    font-size: 24px;
+    font-family: 'Fredoka';
+}
+.display-class-lesson .lesson{
+    margin-top: 30px;
+    padding: 20px;
+    border: solid;
+    border-color: blue;
+    border-radius: 10px;
+
+}
+.display-class-lesson h2{
+    font-size: 36px;
+    font-family: 'Fredoka';
+    font-weight: 400;
+    color: #5A787D;
+}
+.display-class-lesson .title-of-lesson{
+    font-size: 32px;
+}
+  @media only screen and (max-width: 750px) {
+    /* For mobile phones: */
+
+    .container-heads form .heads .lgn
+    {
+        color: #85342A;
+        font-size: 40px;
+        font-family: 'Fredoka';
+        font-weight: 500;
+        margin: auto;
+        margin-top: -10%;
+        margin-left: 15%;
+    }
+    .container-heads form .container-login #btn1{
+        color: #fff;
+        background-color: #85342A;
+        padding: 2%;
+        border-radius: 30px;
+        width: 50%;
+        border-color: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 15%;
+    }
+    .forgot-password{
+        position: relative;
+    }
+    .forgot-password{
+        position: absolute;
+        top: 59%;
+        right: 20%;
+        width: 80%;
+    }
+    
+    .container-heads form  img{
+        opacity: 0;
+        height: 10px;
+        width: 10px;
+    }
+
+    .container-heads form .container-login #username{
+        background-color: #F3EFEF;
+        padding: 12px;
+        font-size: 28px;
+        border-radius: 20px;
+        border-style: none;
+        width: 80%;
+        margin: auto;
+        position: relative;
+    
+    }
+
+    .container-heads form .container-login #password{
+        background-color: #F3EFEF;
+        padding: 12px;
+        font-size: 28px;
+        border-radius: 20px;
+        border-style: none;
+        width: 80%;
+        position: relative;
+    
+    }
+    
+    
+    .container-heads form .container-login #password{
+        position: absolute;
+        top: 44%;
+        right: 10%;
+    }
+    .container-heads form .container-login #username{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+    }
+    /* teacher dashboard */
+    .nav-bar{
+        display: none;
+    }
+    .sidenav-bar{
+        display:none ;
+    }
+    .hdr{
+        width: 95%;
+        height: 70vh;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 10%;
+    }
+    .classroom-img{
+        display: none;
+    }
+    .points{
+        display: none;
+    }
+
+    /* pupils  */
+    .sidebar{
+        display: none;
+    }
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .active {
+        background-color: #04AA6D;
+        color: white;
+      }
+
+      /* Reward mobile design */
+    .my-classes-reward{
+        margin-top: 10px;
+        width: 85%;
+        font-family: 'Fredoka';
+        font-size: 44px;
+        height: 90VH;
+        margin-left: -10px;
+    }
+    .reward-section{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 80px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-left: -50px;
+     
+       
+    }
+   .reward-container p{
+    margin-left: 25px;
+    margin-top: 20px;
+   }
+
+    .reward-container{
+        margin-left: 5%;
+        width: 90%;
+        font-size: 24px;
+    }
+    .reward-container .reward-reward-container{
+       display: block;
+       width: 100%;
+       margin-left: -10%;
+       margin-bottom: 10%;
+    }
+    #claim-reward-btn{
+        border: solid;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 10px;
+
+    }
+    .my-classes {
+        width: 98%;
+        margin-left: 10px;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .my-classes .my-display-classes a{
+        font-size: 42px;
+        margin-left: 0;
+    }
+    .my-classes .pupils-lesson-h1{
+        font-size: 24px;
+    }
+    .my-classes .lesson-content-pupils{
+        width: 97%;
+    }
+    .my-classes .lesson-content-pupil .add-lesson-content{
+        padding-left: 0;
+    }
+    /* viewquiz  */
+    .my-classes .new-my-classes{
+        margin-top: 35%;
+        text-align: center;
+      }
+      .my-classes .new-my-classes .display-add-lesson .activity-box-holder {
+        width: 97%;
+      }
+      .my-classes .new-my-classes .display-add-lesson .activity-box-holder p{
+        width: 100%;
+      }
+      .my-classes .add-lesson{
+        margin-top: -10px;
+        text-align: center;
+      }
+      .my-classes .display-add-lesson h1{
+        font-size: 50px;
+        text-align: center;
+      }
+      .my-classes .display-add-lesson  form .quiz-question {
+        width: 97%;
+
+      }
+      .my-classes .display-add-lesson  form .test-submit-button{
+        text-align: center;
+        margin-top: -10px;
+      }
+     
+      .container-dashboard .my-classes-game {
+        font-size: 24px;
+        padding-left: 0;
+        margin-left: 0px;
+        width: 100%;
+    
+      }
+    .my-classes-game .game-container h1{
+        padding-top: 50px;
+      }
+      .my-classes-game .game-container .gameStart{
+        margin-left: 40%;
+        
+      }
+      .my-classes-game .game-container #mathGame .game-input{
+        width: 50%;
+        font-size: 24px;
+      }
+      .my-classes-game .game-container .stopGame{
+        margin-left: -12px;
+        margin-bottom: 40%;
+
+      }
+
+   /* Hide sidebar images and profile image */
+   
+}
+
+/* Add these styles to your CSS file */
+.class-dropdown {
+    color: black;
+    background-color: white;
+    /* Add any other necessary styles */
+}
+
+.class-option {
+    color: black;
+    text-decoration: none;
+    /* Add any other necessary styles */
+}
+
+/* drop down start side bar */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: 'Fredoka';
+  
+  }
+  
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #000;
+    background-color: inherit;
+    font-family: 'Fredoka';
+    font-size: 24px;
+    color: #5A787D;
+    padding: 10px;
+    margin-left: 0;
+  
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:  #61c07c;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 30px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* end of drop down side bar */
+
+  /* view assign class */
+  .admin-view-pupils{
+    background-color: #fff;
+    border-style: transparent;
+    border-radius: 10px;
+    box-shadow: 10px 10px lightblue;
+    border: solid;
+    margin: 50px;
+    font-family: 'Fredoka';
+  }
+  .class-name-view{
+    font-size: 36px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .assign-teachers{
+    text-align: center;
+    padding-top: -10px;
+    font-weight: 500;
+  }
+  .pupils-view-in-assign-class{
+    padding-left: 100px;
+    margin-top: 20px;
+  }
+  .line-in-pupils{
+    width: 85%;
+    margin-left: 100px;
+  }
+  .pupils-distance-to-top{
+    margin-top: 20px;
+  }
+
+  /* Pupils side Ui */
+  .pupil-greet{
+    font-size: 48px;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-weight: 400;
+  }
+
+  .pupils-greet-bot{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 24px;
+  }
+
+  /* pupils lesson page */
+  .pupils-lesson-h1{
+    font-size: 48px;
+    font-family: 'Fredoka';
+    font-weight: 500;
+    color: #5A787D;
+  }
+
+  .lesson-content-pupils{
+    margin-top: 50px;
+    border: solid;
+    border-color: #5A787D;
+    border-radius: 10px;
+    padding: 20px;
+    color: #5A787D;
+  }
+
+  /* login page forget pass word */
+  .forget-password-link{
+    position: relative;
+  }
+  .forget-password-link{
+    position: absolute;
+    top: 50%;
+    right: 38%;
+    font-size: 18px;
+  }
+  .forget-password-link:hover{
+    color: red;
+  }
+  /* end  login page forget pass word */
+
+  /* email verification  */
+  .forgotPassword{
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 50%;
+    font-size: 36px;
+    font-family: 'Fredoka';
+  }
+
+  .email input{
+    padding: 20px;
+    width: 80%;
+    font-size: 24px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .email-btn{
+    padding: 5px;
+    font-size: 24px;
+    font-family: 'Fredoka';
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+  }
+  .email-btn:hover{
+    background-color: #61c07c;
+  }
+  /*  end of email verification */
+
+  /* edit page of lesson */
+  .lesson-title-edit{
+    width: 80%;
+    padding: 10px;
+    font-size: 24px;
+    margin-top: 80px;
+    border: solid;
+    opacity: 0.5;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: none;
+  }
+  .topic-edit{
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    margin-top: 20px;
+    border: solid;
+    opacity: 0.5;
+    height: 100vh;
+  }
+  .update-edit-btn{
+    position: relative;
+  }
+  .update-edit-btn{
+    position: absolute;
+    top: 17%;
+    left: 79%;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #61c07c;
+    cursor: pointer;
+  }
+  .update-edit-btn:hover{
+    background-color: orangered;
+  }
+    /* end edit page of lesson */
+
+    /* activities page edit */
+    
+
+    .add-activities{
+        position: relative;
+      }
+    .add-activities{
+        position: absolute;
+        top: 14%;
+        left: 83%;
+        font-size: 24px;
+        padding: 5px;
+        border-radius: 10px;
+        border: transparent;
+        cursor: pointer;
+        width: 100px;
+        font-family: 'Fredoka';
+        color: #000;
+        background-color: #61c07c;
+      }
+
+      .add-activities:hover{
+        transform: scale(1.1);
+      }
+
+      .activities-title-head{
+        padding-top: 50px;
+        width: 50%;
+        font-size: 48px;
+        font-weight: 400;
+        font-family: 'Fredoka';
+        color: #5A787D;
+      }
+
+      .quizz-title{
+        font-size: 36px;
+        font-weight: 400;
+        font-family: 'Fredoka';
+      }
+
+      .class-quiz{
+        border: solid;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 30px;
+        box-shadow: 10px 10px lightblue;
+
+      }
+      .quizz-description{
+        font-size: 36px;
+        font-weight: 400;
+        font-family: 'Fredoka';
+        margin-top: 20px;
+      }
+      .add-question-btn{
+        margin-top: -50px;
+        margin-left: 85%;
+        margin-bottom: 50px;
+        font-size: 18px;
+        padding: 10px;
+        width: 150px;
+        background-color: #61c07c;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .add-question-btn:hover{
+        transform: scale(1.1);
+      }
+      .add-question-btn a{
+        color: #000;
+      }
+      .delete-question-btn{
+        margin-top: -150px;
+        margin-left: 98%;
+        margin-bottom: 50px;
+
+      }
+      .delete-question-btn form button{
+       background-color: transparent;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        border: transparent;
+        cursor: pointer;
+        color: #5A787D;
+      }
+      .delete-question-btn form button:hover{
+        color: red;
+      }
+
+      .display-question{
+        border: solid;
+        margin-top: 10%;
+        padding-left: 50px;
+        font-size: 36px;
+        border-radius: 10px;
+        padding-top: 50px;
+        padding-bottom: 80px;
+
+      }
+      .quizDate{
+        margin-top: -50px;
+        font-size: 24px;
+        margin-left: 40%;
+      }
+      .question-choices{
+        padding-left: 50px;
+      }
+      .delete-new-button{
+        margin-top: -22%;
+        margin-bottom: 15%;
+        margin-right: 20px;
+        font-size: 48px;
+      }
+      .delete-question-btn{
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        color: #5A787D;
+        cursor: pointer;
+      }
+      .delete-question-btn:hover{
+        color: red;
+      }
+      .edit-answersheet{
+        margin-top: -23.5%;
+        margin-bottom: 15%;
+        margin-left: 93%;
+        font-size: 48px;
+      }
+      .edit-answersheet a:hover{
+        color: #E5A024;
+      }
+      .edit-answersheet a{
+        font-size: 24px;
+        color: #5A787D;
+      }
+      .ipt-btn-quizz-title{
+        border: solid !important;
+        border-top: none  !important;
+        border-left: none  !important;
+        border-right: none  !important;
+        border-radius: 0 !important;
+        border-color: #5A787D !important;
+        margin-left: 20px !important;
+      }
+      .ipt-btn-quizz{
+        border: solid !important;
+        border-top: none  !important;
+        border-left: none  !important;
+        border-right: none  !important;
+        border-radius: 0 !important;
+        border-color: #5A787D !important;
+       
+      }
+
+      .quiz-add-modal{
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .create-btn{
+        font-size: 18px;
+        padding: 10px;
+        width: 150px;
+        background-color: #61c07c;
+        text-align: center;
+        border-radius: 10px;
+        border: none !important;
+        cursor: pointer;
+      }
+      .create-btn:hover{
+        transform: scale(1.1);
+      }
+
+      .create-question{
+        margin-top: 550px;
+        margin: auto;
+      }
+
+      .question-question{
+        margin-top: 10px;
+        margin-left: 150px;
+      }
+      .question-question input{
+        padding: 10px;
+        font-size: 32px;
+        outline: none;
+        border: solid;
+        width: 70%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: #5A787D;
+      }
+      .title-of-quiz{
+        margin: 50px;
+        font-weight: 500;
+      }
+      .choicess{
+        margin-left: 350px;
+        margin-top: 40px;
+      }
+      .choicess input{
+        padding: 10px;
+        font-size: 24px;
+        display: inline-block;
+        border: solid;
+        border-color: #5A787D;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+      }
+      .create-question-btn{
+        font-size: 18px;
+        padding: 10px;
+        width: 150px;
+        background-color: #61c07c;
+        text-align: center;
+        border-radius: 10px;
+        border: none !important;
+        cursor: pointer;
+        margin-left: 50%;
+        margin-top: 100px;
+
+      }
+      .create-question-btn:hover{
+        transform: scale(1.1);
+      }
+
+      .edit-question-question-edit{
+        text-align: left;
+        margin-left: 30%;
+        margin-top: 5%;
+      }
+      .update-question input{
+        border: solid;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        outline: none;
+        font-size: 48px;
+        width: 20%;
+        text-align: center;
+        margin-left: 2%;
+      }
+      .inputers-questionaires-quest{
+        margin-left: 20px;
+        font-size: 48px;
+      }
+      .inputers-questionaires-quest-quest{
+        margin-left: 20px;
+        font-size: 48px;
+        width: 20%;
+        border: solid;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        outline: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .questionares-pointas input{
+        margin-left: 80px;
+        font-size: 48px;
+        width: 20%;
+        border: solid;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        outline: none;
+        text-align: center;
+        margin-top: 20px;
+
+      }
+      .button-question-buttons button{
+        background-color: #04AA6D;
+        border-radius: 10px;
+        border: transparent;
+        cursor: pointer;
+        width: 20%;
+        margin-left: 15%;
+        margin-top: 10%;
+        font-size: 24px;
+        text-align: center;
+        padding: 5px;
+      }
+      .button-question-buttons button:hover{
+        background-color: #E5A024;
+      }
+   
+    /* end of activities page*/
+
+    /* Game pages design start */
+    .my-classes-game{
+        margin-top: 130px;
+        width: 85%;
+        margin-left: 15%;
+        font-family: 'Fredoka';
+        font-size: 44px;
+        height: 90VH;
+        background-image: linear-gradient(#a534a3, #400A75);
+    }
+
+    .game-container{
+        text-align: center;
+        height: 90vh;   
+        margin-top: -81px;
+    }
+    .game-container h1{
+        padding-top: 5%;
+        color: #FFF;
+    }
+    .startGame{
+        color: #fff;
+        padding: 20px;
+        border: solid;
+        background-image: linear-gradient(#a534a3, #400A75) ;
+        border-radius: 10px;
+        margin-top: 100px;
+        cursor: pointer;
+
+    }
+    .stopGame{
+        color: #fff;
+        padding: 20px;
+        border: solid;
+        background-image: linear-gradient(#a534a3, #400A75) ;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+
+    }
+    .stopGame{
+        position: absolute;
+        top: 85%;
+    }
+
+    .game-rules{
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .game-question{
+        color: #fff;
+        font-size: 130px;
+    }
+
+    .gameStart{
+        width: 7%;
+        margin: auto;
+    }
+
+    .game-input{
+        color: #000;
+        padding: 25px;
+        width: 450px;
+        font-size: 50px;
+        margin-top: 50px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .game-feedback{
+        margin-top: 2%;
+        color: #fff;
+
+    }
+    /* game pages end */
+
+    /* reward page pupils */
+    .my-classes-reward{
+        margin-top: -80px;
+        width: 85%;
+        margin-left:15%;
+        font-family: 'Fredoka';
+        font-size: 44px;
+        height: 90VH;
+    }
+    .reward-section{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 50px;
+        font-weight: 400;
+       
+    }
+
+    .reward-container{
+        margin-left: 5%;
+        width: 90%;
+        font-size: 24px;
+    }
+    .reward-reward-container{
+        margin: 10px;
+        width: 30%;
+        border: solid;
+        display: inline-block;
+        border-radius: 10px;
+        margin-top: 50px;
+        box-shadow: 10px 10px 10px rgb(222, 238, 79);
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+    #claim-reward-btn{
+        border: solid;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: 10px;
+
+    }
+    /* end reward page pupils */
+
+
+    /* activity Quizzes */
+    .activity-box-holder{
+        font-size: 32px;
+        margin-top: 50px;
+        border: solid;
+        padding-left: 5%;
+        padding: 5%;
+        width: 40%;
+        display: inline-block;
+        text-align: left;
+        border-radius: 10px;
+        box-shadow: 10px 10px lightblue;
+    }
+
+    .take-quiz-btn{
+        color: #000;
+        border: solid;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 10%;
+        font-size: 24px;
+        text-align: center;
+        padding: 5px;
+        
+    }
+    .take-quiz-btn a{
+        color: #000;
+    }
+    .take-quiz-btn:hover{
+        background-color: #61c07c;
+    }
+    /* end of activity Quizzes */
+
+    /* quiz questionnair */
+    .quiz-title{
+        margin-left: 0;
+        font-weight: 400;
+        font-size: 70px;
+        margin-top: 20px;
+    }
+    .quiz-question{
+        border: solid;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 40%;
+        display: inline-block;
+        padding: 24px;
+        box-shadow: 10px 10px lightblue;
+    }
+    .input-radio-quiz{
+        margin-left: 20%;
+
+    }
+    .questionnaire{
+        margin-left: 15%;
+    }
+    .test-submit-button button{
+        padding: 10px;
+       width: 82%;
+       cursor: pointer;
+       margin-top: 50px;
+       font-size: 36px;
+       border-radius:10px ;
+        border-color: #101a12;
+       color: #0c120e;
+
+    }
+    .test-submit-button button:hover{
+        background-color: rgb(81, 151, 81);
+    }
+  .my-pupils-class{
+    margin-top: -142px;
+    z-index: -1;
+  }
+  .my-pupils-class .sidenav-bar ul{
+    margin-top: 30%;
+
+  }
+  .new-my-classes{
+    margin-top: 10%;
+  }
+  
+   /* claimed Rewards */
+   .claimed-title{
+    padding-top: 15px;
+    font-size: 60px;
+    margin-top: 100px;
+    font-weight: 400;
+   }
+   .claimers{
+    margin-top: 40px;
+   }
+   .list-claimers{
+    margin: 10px;
+    border: solid;
+    padding: 10px;
+    font-size: 36px;
+    width: 40%;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(218, 221, 37);
+   }
+   
+    /*end claimed Rewards */
+
+    /* create reward */
+    .create-reward-btn-btn{
+        margin-top: -23px;
+    }
+    .add-btn-btn{
+        margin-top: -50px;
+        margin-left: 89%;
+        font-size: 24px;
+        background-color: #04AA6D;
+        padding: 5px;
+        border-radius: 5px;
+       
+    }
+    .add-btn-btn a{
+        color: #000;
+
+    }
+    .add-btn-btn:hover{
+        transform: scale(1.1);
+    }
+    .all-reward-display{
+        margin-top: 40px;
+        font-size: 24px;
+        border: solid;
+        padding: 10px;
+        width: 25%;
+        display: inline-block;
+        margin-left: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px rgb(218, 221, 37);
+    }
+   
+    .reward-edit-btn{
+        margin-top: 20%;
+        font-size: 18px;
+        background-color: #04AA6D;
+        padding: 5px 35px;
+        border-radius: 5px;
+        color: #ffffff;
+        margin-left: 100%;
+        
+    
+    }
+    .reward-edit-btn-btn{
+        margin-top: 20px;
+        width: 100px;
+    }
+    .reward-delete-btn-btn button{
+        margin-top: 10px;
+        font-size: 18px;
+        background-color: #f1210e;
+        padding: 5px;
+        border-radius: 5px;
+        color: #ffffff;
+        width: 100px;
+        margin-left: 33%;
+        border: transparent;
+        cursor: pointer;
+
+    }
+
+    .container-rewards{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .add-reward-reward{
+        padding: 20px;
+        width: 40%;
+        font-size: 36px;
+        margin: 10px;
+        border: solid;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        outline: none;
+    }   
+    .add-reward-reward-btn{
+        font-size: 24px;
+        background-color: #61c07c;
+        padding: 6px 35px;
+        border-radius: 5px;
+        color: #000;
+        cursor: pointer;
+        margin-top: 20px;
+        
+    }
+    .add-reward-reward-btn:hover{
+        transform: scale(1.1);
+    }
+    /* end of create reward */
+    .pupils-sidebar{
+        margin-top: 50%;
+    }
+
+
+    

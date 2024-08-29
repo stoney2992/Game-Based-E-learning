@@ -1,0 +1,336 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TeachersController;
+use App\Http\Controllers\TeacherDashboardController; 
+use App\Http\Controllers\ClassController;
+use App\Http\Controllers\AddClassController;
+use App\Http\Controllers\PupilsController; 
+use App\Http\Controllers\ClassesLessonController;
+use App\Http\Controllers\SmsController;
+use App\Http\Controllers\CreateClassController; 
+use App\Http\Controllers\CountViewController;  
+use App\Http\Controllers\AssignClassController;
+use App\Http\Controllers\ForgetPasswordManager;
+use App\Http\Controllers\QuizController;
+use App\Http\Controllers\QuizQuestionController;
+use App\Http\Controllers\RewardController;
+use App\Http\Controllers\ClaimedReward; 
+use App\Http\Controllers\MathGameController;
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+/*Route::get('/', function () {
+    return view('login');
+});*/
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/lesson', function () {
+    return view('lesson');
+});
+
+Route::get('/pupils', function () {
+    return view('pupils');
+});
+
+Route::get('/activity', function () {
+    return view('activity');
+});
+
+Route::get('/reward', function () {
+    return view('reward');
+});
+
+Route::get('/dummy', function () {
+    return view('dummy');
+});
+// Route::get('/student_dashboard', function () {
+//     return view('student_dashboard');
+// });
+
+Route::get('/pupils_lesson', function () {
+    return view('pupils_lesson');
+});
+
+
+Route::get('/admin_register', function () {
+    return view('admin_register');
+});
+
+
+
+
+
+Route::controller(AuthController::class)->group(function () {
+    Route::get('register','register')->name('register');
+    Route::post('register','registerSave')->name('register_save');
+
+    Route::get('/','login')->name('login');
+    Route::post('login','loginAction')->name('login_action');
+
+    Route::get('logout','logout')->middleware('auth')->name('logout');
+});
+
+
+// Admin Dashboard
+Route::middleware('auth')->group(function () {
+
+    Route::controller(CountViewController::class)->group(function () {
+        Route::get('dashboard','dashboard')->name('dashboard');
+        
+    });
+
+    Route::controller(TeachersController::class)->prefix('teacher_registration')->group(function () {
+        Route::get('','index')->name('teacher_registration');
+        Route::get('create','create')->name('teacher_registration.create');     
+        Route::post('store','store')->name('teacher_registration.store'); 
+        
+        Route::get('show/{id}','show')->name('teacher_registration.show');
+        Route::get('edit/{id}', 'edit')->name('teacher_registration.edit');
+        Route::put('edit/{id}', 'update')->name('teacher_registration.update');
+        Route::delete('destroy/{id}', 'destroy')->name('teacher_registration.destroy');
+        
+
+    });
+
+    Route::controller(PupilsController::class)->prefix('pupils_registration')->group(function () {
+        Route::get('index', 'index')->name('pupils_registration.index');
+        Route::get('create', 'create')->name('pupils_registration.create');
+        Route::post('store', 'store')->name('pupils_registration.store');
+        Route::get('show/{id}', 'show')->name('pupils_registration.show');
+        Route::get('edit/{id}', 'edit')->name('pupils_registration.edit');
+        Route::put('edit/{id}', 'update')->name('pupils_registration.update');
+        
+        Route::delete('destroy/{id}', 'destroy')->name('pupils_registration.destroy');
+    });
+    
+
+    Route::controller(AddClassController::class)->prefix('add_class')->group(function () {
+        Route::get('','index')->name('add_class.index');
+        // Route::get('create','create')->name('pupils_registration.create');     
+        Route::post('store','store')->name('add_class.store'); 
+        Route::get('show/{id}','show')->name('add_class.show');
+        // Route::get('edit/{id}', 'edit')->name('pupils_registration.edit');
+        // Route::put('edit/{id}', 'update')->name('pupils_registration.update');
+        // Route::delete('destroy/{id}', 'destroy')->name('pupils_registration.destroy');
+
+    });
+
+    Route::controller(ClassesLessonController::class)->prefix('add_class')->group(function () {     
+        Route::post('storeLesson', 'storeLesson')->name('add_class.storeLesson'); 
+        Route::get('show/{id}', 'show')->name('add_class.show');
+
+        Route::get('destroy/{id}', 'destroy')->name('add_class.destroy');
+    });
+
+    // Route::delete('destroy/{id}', 'ClassesLessonController@destroy')->name('add_class.destroy');
+
+    
+
+
+    Route::controller(CreateClassController::class)->prefix('create_class')->group(function () {     
+        Route::get('index','index')->name('create_class.index');
+        Route::post('store','store')->name('create_class.store');
+        Route::delete('delete/{id}', 'delete')->name('create_class.delete');
+
+    });
+
+    Route::controller(AssignClassController::class)->prefix('assign_class')->group(function () {     
+        Route::get('index','index')->name('assign_class.index');
+        Route::post('assign','assign')->name('assign_class.assign');
+    
+        //class view for pupil and teacher
+        Route::get('myclass','myclass')->name('assign_class.MyClass');
+        Route::get('myclassPupils','myclassPupils')->name('assign_class.myclassPupils');
+        Route::get('mylessonPupils/{class_id}', 'mylessonPupils')->name('assign_class.mylessonPupils');
+        
+        
+
+
+    
+        // Pupils assign and delete
+        Route::get('pupil','pupil')->name('assign_class.pupil');
+        Route::get('destroy/{id}', 'destroy')->name('assign_class.destroy');
+    
+        // Teachers assign, delete and edit
+        Route::post('addClass','addClass')->name('assign_class.addClass');
+        Route::get('delete/{id}', 'delete')->name('assign_class.delete');
+        Route::get('addLesson/{id}', 'addLesson')->name('assign_class.addLesson');
+        Route::post('postLesson', 'postLesson')->name('assign_class.postLesson');
+        Route::get('deleteLesson/{id}', 'deleteLesson')->name('assign_class.deleteLesson');
+        Route::get('editLesson/{id}', 'editLesson')->name('assign_class.editLesson');
+        Route::put('updateLesson/{id}', 'updateLesson')->name('assign_class.updateLesson');
+
+
+        Route::get('viewAssigned','viewAssigned')->name('assign_class.viewAssignClass');
+        Route::get('viewAssignPupils/{class_id}', 'viewAssignPupils')->name('assign_class.viewAssignPupils');
+
+        // Route::get('viewQuizzes/{class_id}', [AssignClassController::class, 'viewQuizzes'])
+        // ->name('assign_class.view_quizzes');
+        Route::get('viewQuizzes/{class_id}','viewQuizzes')->name('assign_class.view_quizzes');
+
+
+
+    });
+
+
+
+    //Teachers Quiz COntroller 
+    Route::controller(QuizController::class)->prefix('quiz')->group(function () {     
+        Route::get('quizIndex/{class_id}', 'index')->name('quiz.quizIndex');
+        
+        Route::get('quizShow/{id}', 'show')->name('quiz.quizShow');
+        Route::post('quizSubmit/{quizId}', 'submit')->name('quiz.submit');
+
+        Route::post('quiz/store', 'store')->name('quiz.store');
+        Route::delete('delete/{quizId}', 'delete')->name('quiz.delete');
+
+    });    
+
+
+
+    Route::controller(QuizQuestionController::class)->prefix('quiz')->group(function () {   
+        Route::get('create/{quizId}', 'create')->name('quiz.question_create');
+        Route::post('store/{quizId}', 'store')->name('quiz.question_store');
+        Route::delete('destroy/{questionId}', 'destroy')->name('quiz.question_destroy');
+
+    }); 
+
+    Route::controller(RewardController::class)->prefix('rewards')->group(function () {   
+        Route::get('index', 'index')->name('rewards.index');
+
+    }); 
+
+
+
+    
+
+    Route::controller(RewardController::class)->prefix('rewards')->group(function () {
+        Route::get('index', 'index')->name('rewards.index');
+        Route::post('claim/{rewardId}', 'claim')->name('rewards.claim');
+        Route::get('claimed-rewards', 'claimedRewards')->name('rewards.claimed');
+        Route::get('reward', 'reward')->name('rewards.reward');
+        Route::get('create', 'create')->name('rewards.create');
+        Route::post('store', 'store')->name('rewards.store');
+        Route::get('{reward}/edit', 'edit')->name('rewards.edit');
+        Route::put('{reward}', 'update')->name('rewards.update');
+        Route::delete('{reward}', 'destroy')->name('rewards.destroy');
+    });
+
+    Route::controller(MathGameController::class)->prefix('math-game')->group(function () {
+        Route::get('index', 'index')->name('math-game.index');
+        Route::post('submit', 'submit')->name('math-game.submit');
+    });
+    
+
+
+ 
+    
+    
+
+    Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
+});
+// Admin Dashboard
+
+
+
+
+//Teachers Dashboard
+// Route::get('/teacherDashboard', 'TeacherDashboardController@index')->name('teacherDashboard');
+
+
+Route::controller(TeachersController::class)->group(function () {
+    Route::get('loginT','loginT')->name('loginT');
+    Route::post('','loginActionT')->name('login_actionT');
+});
+
+Route::get('teacherDashboard', function () {
+    return view('teacher_dashboard');
+})->name('teacherDashboard');
+
+Route::controller(TeacherDashboardController::class)->prefix('teacher_dashboard')->group(function () {
+        Route::get('','index')->name('teacher_dashboard');
+        Route::post('store','store')->name('teacher_dashboard.store');
+});
+
+Route::controller(ClassController::class)->prefix('teacher_dashboard')->group(function () {
+    Route::get('class','class')->name('teacher_dashboard.class');
+    Route::post('classStore','classStore')->name('teacher_dashboard.classStore');
+
+    Route::get('pupil','pupil')->name('teacher_dashboard.pupil');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('teacherDashboard', function () {
+        return view('teacher_dashboard');
+    })->name('teacherDashboard'); 
+
+    //route for teacher dashboard functions
+
+});
+
+// Route::controller(ClassController::class)->prefix('teacher_dashboard')->group(function () {
+//         Route::get('class','class')->name('teacher_dashboard.class');
+//         Route::post('classStore','classStore')->name('teacher_dashboard.classStore');
+    
+//         Route::get('pupil','pupil')->name('teacher_dashboard.pupil');
+//     });
+
+
+    // });
+
+
+
+//Teachers Dashboard end
+
+
+// pupil auth login start
+
+Route::middleware('auth')->group(function () {
+    Route::get('pupilDashboard', function () {
+        return view('student_dashboard');
+    })->name('student_dashboard'); 
+
+ 
+
+    });
+
+    // Route::get('/student_dashboard', function () {
+    //     return view('student_dashboard');
+    // });
+
+
+    //sms routes
+
+    route::get("/sendsms", [SmsController::class,'sendsms']);
+    Route::get('/test-sms', [RewardController::class, 'testSmsFunctionality']);
+
+
+
+    Route::get("/forget-password", [ForgetPasswordManager::class, "forgetPassword"])->name("forget.password");
+    Route::post("/forget-password", [ForgetPasswordManager::class, "forgetPasswordPost"])->name("forget.password.post");
+    Route::get("/reset-password/{token}", [ForgetPasswordManager::class, "resetPassword"])->name("reset.password");
+    Route::post("/reset-password", [ForgetPasswordManager::class, "resetPasswordPost"])->name("reset.password.post");
